@@ -1,16 +1,14 @@
 #main {
     text-align: center;
+    height: calc(100vw * 900 / 1920);
+    padding-top: calc(100vw * 121 / 1920);
 }
 #main h2 {
-    font-family: 'Pretendard';
     font-style: normal;
     font-weight: 600;
     font-size: calc(100vw * 50 / 1920);
-    line-height: calc(100vw * 81 / 1920);
-    margin-top: calc(100vw * 80 / 1920);
+    line-height: calc(100vw * 60 / 1920);
 }
-
-
 .name_line {
     margin-top: calc(100vw * 70 / 1920);
 }
@@ -27,22 +25,149 @@
     100% {stroke-dashoffset: 0;}
 }
 
+
 .content {
     width: 100%;
 }
 .content svg{
     position: absolute;
     width: 100%;
+    z-index: -1;
 }
 
+
+.content1 {
+    height: calc(100vw * 1088 / 1920);
+}
 .content1 svg {
     top: calc(100vw * 870 / 1920);
     left: calc(100vw * 30 / 1920);
 }
-.content2 svg {
-    top: calc(100vw * 1990 / 1920);
-    left: calc(100vw * 899.5 / 1920);
+.profile {
+    height: 100%;
+    position: relative;
+    font-family: 'Pretendard';
 }
+.profile div {
+    display: inline-block;
+    position: absolute;
+}
+.profile_left {
+    left: 25%;
+    top: 25%;
+    text-align: center;
+    font-family: 'Reenie Beanie';
+    font-size: calc(100vw * 32 / 1920);
+}
+.profile_left img {
+    display: block;
+    margin-bottom: calc(100vw * 30 / 1920);
+}
+.profile_left a {
+    font-family: 'Pretendard';
+    font-weight: 400;
+    font-size: calc(100vw * 24 / 1920);
+    line-height: calc(100vw * 29 / 1920);
+    display: block;
+    margin-top: calc(100vw * 10 / 1920);
+}
+.profile_right {
+    right: 0;
+    width: 50%;
+    height: 100%;
+    text-align: left;
+    padding: calc(100vw * 100 / 1920) calc(100vw * 230 / 1920) 0 calc(100vw * 135 / 1920);
+}
+.profile_right span {
+    font-family: 'Reenie Beanie';
+    font-weight: 500;
+    font-size: calc(100vw * 36 / 1920);
+}
+.profile_right h2 {
+    width: calc(100vw * 460 / 1920);
+    font-weight: 400;
+    font-size: calc(100vw * 36 / 1920);
+    line-height: calc(100vw * 43 / 1920);
+    margin-top: calc(100vw * 6 / 1920);
+    margin-bottom: calc(100vw * 35 / 1920);
+}
+.profile_right h2 span {
+    font-weight: 700;
+    font-size: calc(100vw * 40 / 1920);
+    line-height: calc(100vw * 48 / 1920);
+    color: #487AC0;
+}
+.profile_right p {
+    width: calc(100vw * 514 / 1920);
+    font-weight: 400;
+    font-size: calc(100vw * 24 / 1920);
+    line-height: calc(100vw * 34 / 1920);
+}
+.profile_right p:last-of-type {
+    margin-top: calc(100vw * 380 / 1920);
+    width: calc(100vw * 544 / 1920);
+}
+.profile_right p span {
+    font-weight: 700;
+    font-size: calc(100vw * 24 / 1920);
+    line-height: calc(100vw * 29 / 1920);
+    color: #487AC0;
+}
+
+
+.content2 {
+    height: calc(100vw * 1000 / 1920);
+}
+.content2 svg {
+    top: calc(100vw * 1949.5 / 1920);
+    left: calc(100vw * 28 / 1920);
+}
+.history {
+    position: relative;
+    font-weight: 400;
+    font-size: calc(100vw * 20 / 1920);
+    line-height: calc(100w * 30 / 1920);
+}
+.history h2 {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+    color: #487AC0;
+    margin-bottom: calc(100vw * 12 / 1920);
+}
+.history_left {
+    position: absolute;
+    left: 15%;
+}
+.history_left div:nth-of-type(1) {
+    margin-top: calc(100vw * 80 / 1920);
+}
+.history_left div:nth-of-type(2) {
+    margin-top: calc(100vw * 310 / 1920);
+}
+.history_left div:nth-of-type(3) {
+    margin-top: calc(100vw * 180 / 1920);
+}
+.history_left div:nth-of-type(3) ul {
+    display: inline-block;
+    margin-right: calc(100vw * 70 / 1920);
+}
+.history_right {
+    position: absolute;
+    left: 55%;
+}
+.history_right div:nth-of-type(1) {
+    margin-top: calc(100vw * 80 / 1920);
+}
+.history_right div:nth-of-type(2) {
+    margin-top: calc(100vw * 200 / 1920);
+}
+.history_right div:nth-of-type(2) ul {
+    margin-bottom: calc(100vw * 30 / 1920);
+}
+
+
+
 .content3 svg {
     top: calc(100vw * 3071.5 / 1920);
     left: calc(100vw * 943.7 / 1920);
@@ -66,19 +191,4 @@
 .content8 svg {
     top: calc(100vw * 9555 / 1920);
     left: calc(100vw * 75 / 1920);
-}
-
-
-.profile {
-    text-align: center;
-}
-.profile div {
-    display: inline-block;
-    width: 49%;
-    margin: 0 auto;
-    border: #000 solid 1px;
-}
-.profile div:nth-of-type(2) {
-    text-align: left;
-    padding: 130px 230px 130px 135px;
 }
