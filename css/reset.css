@@ -1,0 +1,12 @@
+/* CSS Reset */
+
+body{-ms-overflow-style: none;}
+::-webkit-scrollbar {display: none;}
+body,button,div,dd,dl,dt,fieldset,form,h1,h2,h3,h4,h5,h6,input,legend,li,ol,p,select,table,td,textarea,th,ul, header, nav, section { margin:0; padding:0; box-sizing: border-box;}
+body,button,input,select,table,textarea { font-size:17px;}
+button,input { border-radius:0; border: none; background-color: transparent; cursor: pointer;}
+fieldset,img { border:0 }
+ol,ul { list-style:none }
+address,em { font-style:normal }
+a { text-decoration:none }
+iframe { overflow:hidden; margin:0; padding:0; border:0 }

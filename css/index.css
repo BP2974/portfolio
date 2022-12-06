@@ -1,40 +1,84 @@
-.hide {
-    display: none;
+#main {
+    text-align: center;
+}
+#main h2 {
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 600;
+    font-size: calc(100vw * 50 / 1920);
+    line-height: calc(100vw * 81 / 1920);
+    margin-top: calc(100vw * 80 / 1920);
 }
 
-h1 {
+
+.name_line {
+    margin-top: calc(100vw * 70 / 1920);
+}
+.name_line svg {
+    width: 100%;
+}
+.path0 {
+    stroke-dasharray: 6224.53466796875;
+    stroke-dashoffset: 6224.53466796875;
+    animation: name 1.0s linear forwards;
+}
+@keyframes name {
+    0% {stroke-dashoffset: 6224.53466796875;}
+    100% {stroke-dashoffset: 0;}
+}
+
+.content {
+    width: 100%;
+}
+.content svg{
+    position: absolute;
+    width: 100%;
+}
+
+.content1 svg {
+    top: calc(100vw * 870 / 1920);
+    left: calc(100vw * 30 / 1920);
+}
+.content2 svg {
+    top: calc(100vw * 1990 / 1920);
+    left: calc(100vw * 899.5 / 1920);
+}
+.content3 svg {
+    top: calc(100vw * 3071.5 / 1920);
+    left: calc(100vw * 943.7 / 1920);
+}
+.content4 svg {
+    top: calc(100vw * 5233 / 1920);
+    left: calc(100vw * 152.95 / 1920);
+}
+.content5 svg {
+    top: calc(100vw * 6310.5 / 1920);
+    left: calc(100vw * 173 / 1920);
+}
+.content6 svg {
+    top: calc(100vw * 7393 / 1920);
+    left: calc(100vw * 161 / 1920);
+}
+.content7 svg {
+    top: calc(100vw * 8473.5 / 1920);
+    left: calc(100vw * 132.5 / 1920);
+}
+.content8 svg {
+    top: calc(100vw * 9555 / 1920);
+    left: calc(100vw * 75 / 1920);
+}
+
+
+.profile {
     text-align: center;
 }
-nav {
-    position: fixed;
-    top: 40%;
-    right: 0;
-    transform-origin: -50%, -50%;
-    border: 3px solid #000;
-    padding: 10px 10px 10px 0;
+.profile div {
+    display: inline-block;
+    width: 49%;
+    margin: 0 auto;
+    border: #000 solid 1px;
 }
-nav li {
-    list-style: none;
-    text-align: center;
-    margin: 10px 25px 10px 0;
-}
-main {
-    text-align: center;
-    font-size: 30px;
-}
-a {
-    text-decoration: none;
-    color: cornflowerblue; 
-    font-size: 20px;
-}
-a:hover {
-    color: gray;
-}
-img {
-    width: 30%;
-    margin: 230px 0;
-}
-footer {
-    margin-top: 80px;
-    text-align: center;
+.profile div:nth-of-type(2) {
+    text-align: left;
+    padding: 130px 230px 130px 135px;
 }

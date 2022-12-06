@@ -1,0 +1,83 @@
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+
+a:hover {
+    color: gray;
+}
+
+.hide {
+    display: none;
+}
+
+
+header {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    margin-left: calc(100vw * -50 / 1920);
+}
+h1 {
+    text-align: center;
+    font-family: 'Pretendard';
+    font-weight: 600;
+    font-size: calc(100vw * 40 / 1920);
+    line-height: calc(100vw * 80 / 1920);
+    text-align: center;
+}
+nav {
+    position: fixed;
+    top: 40%;
+    right: 0;
+    transform-origin: -50%, -50%;
+    border: calc(100vw * 3 / 1920) solid #000;
+    padding: calc(100vw * 10 / 1920);
+    background: rgba(255, 255, 255, 0.4);
+    z-index: 3;
+}
+nav li {
+    list-style: none;
+    text-align: center;
+    margin: calc(100vw * 20 / 1920) calc(100vw * 25 / 1920);
+}
+
+footer {
+    background: #4B7CC3;
+    color: #fff;
+    height: calc(100vw * 396 / 1920);
+    margin-top: calc(100vw * 80 / 1920);
+    text-align: center;
+    padding: calc(100vw * 100 / 1920) calc(100vw * 200 / 1920);
+    font-family: 'Pretendard';
+    font-weight: 500;
+    font-size: calc(100vw * 18 / 1920);
+    line-height: calc(100vw * 24 / 1920);
+}
+.footer_top {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    margin-bottom: calc(100vw * 100 /1920);
+}
+.footer_left {
+    width: calc(100vw * 550 / 1920);
+    font-weight: 300;
+    font-size: calc(100vw * 30 / 1920);
+    line-height: calc(100vw * 38 / 1920);
+}
+.footer_left h2 {
+    font-weight: 300;
+    font-size: calc(100vw * 36 / 1920);
+    line-height: calc(100vw * 48 / 1920);
+    margin-bottom: calc(100vw * 36 / 1920);
+}
+.footer_left h2 span {
+    font-weight: 700;
+}
+.footer_right li {
+    margin-bottom: calc(100vw * 19 / 1920);
+    font-weight: 300;
+    font-size: calc(100vw * 20 / 1920);
+    line-height: calc(100vw * 24/ 1920);
+    width: calc(100vw * 350 / 1920);
+    display: flex;
+    justify-content: space-between;
+}
