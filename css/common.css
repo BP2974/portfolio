@@ -15,10 +15,12 @@ body{
     font-family: 'Pretendard';
 }
 
+
+
 header {
     position: fixed;
     width: 100%;
-    height: calc(100vw * 50 / 1920);
+    height: calc(100vw * 60 / 1920);
     top: 0;
     left: 0;
     z-index: 3;
@@ -29,7 +31,7 @@ h1 {
     text-align: center;
     font-weight: 600;
     font-size: calc(100vw * 40 / 1920);
-    line-height: calc(100vw * 80 / 1920);
+    line-height: calc(100vw * 60 / 1920);
     text-align: center;
 }
 nav {
@@ -49,8 +51,12 @@ nav li {
     margin: calc(100vw * 20 / 1920) calc(100vw * 25 / 1920);
 }
 
+
+
+
+
 footer {
-    display: block;
+    position: relative;
     background: #4B7CC3;
     color: #fff;
     height: calc(100vw * 250 / 1920);
@@ -90,4 +96,82 @@ footer {
     width: calc(100vw * 350 / 1920);
     display: flex;
     justify-content: space-between;
+}
+
+footer::before {
+    display: block;
+    position: absolute;
+    top: calc(100vw * -160 / 1920);
+    right: calc(100vw * 265 / 1920);
+    content: "";
+    width: calc(100vw * 352 / 1920);
+    height: calc(100vw * 352 / 1920);
+    background: #4B7CC3;
+    border-radius: 50%;
+    z-index: -3;
+}
+.footer_text {
+    font-family: 'Reenie Beanie';
+    font-weight: 500;
+    font-size: calc(100vw * 64 / 1920);
+}
+.footer_text1 {
+    position: absolute;
+    top: calc(100vw * -40 / 1920);
+    right: calc(100vw * 555 / 1920);
+    transform: rotate(-30deg);
+}
+.footer_text2 {
+    position: absolute;
+    top: calc(100vw * -70 / 1920);
+    right: calc(100vw * 545 / 1920);
+    transform: rotate(-28deg);
+}
+.footer_text3 {
+    position: absolute;
+    top: calc(100vw * -95 / 1920);
+    right: calc(100vw * 520 / 1920);
+    transform: rotate(-20deg);
+}
+.footer_text4 {
+    position: absolute;
+    top: calc(100vw * -120 / 1920);
+    right: calc(100vw * 495 / 1920);
+    transform: rotate(-15deg);
+}
+.footer_text5 {
+    position: absolute;
+    top: calc(100vw * -130 / 1920);
+    right: calc(100vw * 455 / 1920);
+    transform: rotate(-10deg);
+}
+.footer_text6 {
+    position: absolute;
+    top: calc(100vw * -135 / 1920);
+    right: calc(100vw * 410 / 1920);
+    transform: rotate(30deg);
+}
+.footer_text7 {
+    position: absolute;
+    top: calc(100vw * -130 / 1920);
+    right: calc(100vw * 380 / 1920);
+    transform: rotate(30deg);
+}
+.footer_text8 {
+    position: absolute;
+    top: calc(100vw * -90 / 1920);
+    right: calc(100vw * 315 / 1920);
+    transform: rotate(60deg);
+}
+.footer_text9 {
+    position: absolute;
+    top: calc(100vw * -60 / 1920);
+    right: calc(100vw * 300 / 1920);
+    transform: rotate(80deg);
+}
+.footer_text10 {
+    position: absolute;
+    top: calc(100vw * -30 / 1920);
+    right: calc(100vw * 295 / 1920);
+    transform: rotate(90deg);
 }

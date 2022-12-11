@@ -4,7 +4,6 @@
     padding-top: calc(100vw * 200 / 1920);
 }
 #main h2 {
-    font-style: normal;
     font-weight: 600;
     font-size: calc(100vw * 44 / 1920);
     line-height: calc(100vw * 60 / 1920);
@@ -13,7 +12,7 @@
     margin-top: calc(100vw * 100 / 1920);
 }
 .name_line svg {
-    width: 100%;
+    width: calc(100vw * 722.62 / 1920)
 }
 .path0 {
     stroke-dasharray: 4140.10693359375;
@@ -37,13 +36,13 @@
 
 
 #about {
+    width: 100vw;
     height: calc(100vw * 2088 / 1920);
+    overflow: hidden;
 }
 .about_line {
     top: calc(100vw * 980 / 1920);
     left: calc(100vw * 130 / 1920);
-    width: calc(100vw * 1616 / 1920);
-    height: calc(100vw * 1886 / 1920);
 }
 .path1 {
     transition: all .4s ease-in-out;
@@ -263,6 +262,7 @@
     margin-top: calc(100vw * 20 / 1920);
     height: calc(100vw * 600 / 1920);
     border-top: #000 solid calc(100vw * 2 / 1920);
+    padding-top: calc(100vw * 20 / 1920);
 }
 .skill_con li {
     display: flex;
@@ -270,7 +270,6 @@
     opacity: 0;
     position:absolute;
     width: 100%;
-    transition: opacity .3s;
 }
 .skill_con li.active {
     opacity: 1;
@@ -284,6 +283,7 @@
 }
 .skill_con li div img {
     margin-right: calc(100vw * 30 / 1920);
+    width: calc(100vw * 100 / 1920);
 }
 .skill_con li div {
     line-height: calc(100vw * 24 / 1920);
@@ -291,4 +291,59 @@
 .skill_con li div h3 {
     font-size: calc(100vw * 24 / 1920);
     margin-bottom: calc(100vw * 10 / 1920);
+}
+
+
+
+#works {
+    position: relative;
+    height: calc(100vw * 4900 / 1920);
+}
+#works svg {
+    position: absolute;
+    top: calc(100vw * 400 / 1920);
+    left: 0;
+    z-index: -1;
+}
+.path2 {
+    transition: all .4s ease-in-out;
+}
+.work1 {
+    position: absolute;
+    top: calc(100vw * 200 / 1920);
+    right: calc(100vw * 100 / 1920);
+}
+.work2 {
+    position: absolute;
+    top: calc(100vw * 1200 / 1920);
+    left: calc(100vw * 100 / 1920);
+}
+.work3 {
+    position: absolute;
+    top: calc(100vw * 2300 / 1920);
+    right: calc(100vw * 100 / 1920);
+}
+.work4 {
+    position: absolute;
+    top: calc(100vw * 3400 / 1920);
+    left: calc(100vw * 100 / 1920);
+}
+.work_img {
+    position: relative;
+    width: calc(100vw * 1000 / 1920);
+    height: calc(100vw * 570 / 1920);
+}
+#works img {
+    width: 100%;
+}
+.work_simple {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: calc(100vw * 220 / 1920);
+    width: calc(100vw * 1000 / 1920);
+    color: #fff;
+    font-size: calc(100vw * 28 / 1920);
+    display: none;
 }
