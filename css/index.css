@@ -12,7 +12,8 @@
     margin-top: calc(100vw * 100 / 1920);
 }
 .name_line svg {
-    width: calc(100vw * 722.62 / 1920)
+    height: calc(100vw * 567 / 1920);
+    width: calc(100vw * 764 / 1920);
 }
 .path0 {
     stroke-dasharray: 4140.10693359375;
@@ -59,6 +60,7 @@
 .profile_left {
     left: 23%;
     top: 25%;
+    width: calc(100vw * 365 / 1920);
     text-align: center;
     font-family: 'Reenie Beanie';
     font-size: calc(100vw * 32 / 1920);
@@ -310,30 +312,30 @@
 }
 .work1 {
     position: absolute;
-    top: calc(100vw * 200 / 1920);
-    right: calc(100vw * 100 / 1920);
+    top: calc(100vw * 250 / 1920);
+    right: calc(100vw * 120 / 1920);
 }
 .work2 {
     position: absolute;
-    top: calc(100vw * 1200 / 1920);
-    left: calc(100vw * 100 / 1920);
+    top: calc(100vw * 1300 / 1920);
+    left: calc(100vw * 120 / 1920);
 }
 .work3 {
     position: absolute;
-    top: calc(100vw * 2300 / 1920);
-    right: calc(100vw * 100 / 1920);
+    top: calc(100vw * 2400 / 1920);
+    right: calc(100vw * 120 / 1920);
 }
 .work4 {
     position: absolute;
-    top: calc(100vw * 3400 / 1920);
-    left: calc(100vw * 100 / 1920);
+    top: calc(100vw * 3480 / 1920);
+    left: calc(100vw * 120 / 1920);
 }
 .work_img {
     position: relative;
-    width: calc(100vw * 1000 / 1920);
-    height: calc(100vw * 570 / 1920);
+    width: calc(100vw * 800 / 1920);
+    height: calc(100vw * 450 / 1920);
 }
-#works img {
+.work_img img {
     width: 100%;
 }
 .work_simple {
@@ -341,9 +343,67 @@
     position: absolute;
     top: 0;
     left: 0;
-    padding: calc(100vw * 220 / 1920);
-    width: calc(100vw * 1000 / 1920);
+    padding: calc(100vw * 180 / 1920) calc(100vw * 120 / 1920);
+    width: calc(100vw * 800 / 1920);
     color: #fff;
-    font-size: calc(100vw * 28 / 1920);
+    font-size: calc(100vw * 22 / 1920);
     display: none;
+}
+.work_info {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #fff;
+    z-index: 2;
+}
+.work_info img {
+    position: absolute;
+    width: 50%;
+}
+.work_info h2 {
+    position: absolute;
+    left: 55%;
+    font-size: calc(100vw * 32 / 1920);
+}
+.work_info p {
+    position: absolute;
+    left: 55%;
+    top: 30%;
+    width: 34%;
+    line-height: 1.5em;
+    font-size: calc(100vw * 18 / 1920);
+}
+.back_btn {
+    position: relative;
+    width: calc(100vw * 25 / 1920);
+    height: calc(100vw * 20 / 1920);
+    margin: calc(100vw * 100 / 1920);
+    cursor: pointer;
+}
+.back_btn span{
+    display: block;
+    width: 100%;
+    height: calc(100vw * 2 / 1920);
+    border-radius: calc(100vw * 10 / 1920);
+    color: #000;
+    background: #000;
+    position: absolute;
+    transform: rotate(0deg);
+    z-index: 3;
+}
+.back_btn span:nth-child(1) {
+    top: 0;
+    transform: translateX(calc(100vw * -5 / 1920)) rotate(135deg);
+}
+.back_btn span:nth-child(2) {
+    margin-top: calc(100vw * -1 / 1920);
+    top: 50%;
+    width: 150%;
+}
+.back_btn span:nth-child(3) {
+    bottom: 0;
+    transform: translateX(calc(100vw * -5 / 1920)) rotate(-135deg);
 }

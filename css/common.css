@@ -34,16 +34,69 @@ h1 {
     line-height: calc(100vw * 60 / 1920);
     text-align: center;
 }
+.hamburger_btn{
+    position: fixed;
+    width: calc(100vw * 25 / 1920);
+    height: calc(100vw * 20 / 1920);
+    margin: calc(100vw * 18 / 1920);
+    top: 0; right: 0;
+    z-index: 4;
+    cursor: pointer;
+}
+.hamburger_menu {
+    position: relative;
+    width: calc(100vw * 25 / 1920);
+    height: calc(100vw * 20 / 1920);
+}
+.hamburger_menu span {
+    opacity: 1;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: calc(100vw * 2 / 1920);
+    border-radius: calc(100vw * 10 / 1920);
+    color: #000;
+    background: #000;
+    position: absolute;
+    transform: rotate(0deg);
+    transition: .4s ease-in-out;
+}
+.hamburger_menu span:nth-child(1) {
+    top: 0;
+}
+.hamburger_menu span:nth-child(2) {
+    margin-top: calc(100vw * -1 / 1920);
+    top: 50%
+}
+.hamburger_menu span:nth-child(3) {
+    bottom: 0;
+}
+.hamburger_menu.open span:nth-child(1) {
+    transform: translateY(calc(100vw * 9 / 1920)) rotate(135deg);
+}
+.hamburger_menu.open span:nth-child(2) {
+    opacity: 0;
+    transform: translateX(calc(100vw * 60 / 1920));
+}
+.hamburger_menu.open span:nth-child(3) {
+    transform: translateY(calc(100vw * -9 / 1920)) rotate(-135deg);
+}
 nav {
     position: absolute;
     top: 50%;
     right: 0;
     border: calc(100vw * 3 / 1920) solid #000;
+    border-radius: calc(100vw * 10 / 1920) 0 0 calc(100vw * 10 / 1920);
     margin-top: calc(100vw * 330 / 1920);
     margin-right: calc(100vw * -3 / 1920);
     padding: calc(100vw * 10 / 1920);
     background: rgba(255, 255, 255, 0.8);
     backdrop-filter: blur(2px);
+    transform: translateX(calc(100vw * 160 / 1920));
+    transition: .4s ease-in-out;
+}
+nav.open{
+    transform: translateX(0);
 }
 nav li {
     list-style: none;
