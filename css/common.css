@@ -127,14 +127,14 @@ footer {
     margin-bottom: calc(100vw * 100 /1920);
 }
 .footer_left {
-    width: calc(100vw * 550 / 1920);
+    width: calc(100vw * 460 / 1920);
     font-weight: 300;
-    font-size: calc(100vw * 30 / 1920);
+    font-size: calc(100vw * 26 / 1920);
     line-height: calc(100vw * 38 / 1920);
 }
 .footer_left h2 {
     font-weight: 300;
-    font-size: calc(100vw * 36 / 1920);
+    font-size: calc(100vw * 30 / 1920);
     line-height: calc(100vw * 48 / 1920);
     margin-bottom: calc(100vw * 36 / 1920);
 }

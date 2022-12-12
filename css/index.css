@@ -42,8 +42,11 @@
     overflow: hidden;
 }
 .about_line {
+    position: absolute;
     top: calc(100vw * 980 / 1920);
     left: calc(100vw * 130 / 1920);
+    width: calc(100vw * 1673 / 1920);
+    height: calc(100vw * 1886 / 1920);
 }
 .path1 {
     transition: all .4s ease-in-out;
@@ -73,7 +76,7 @@
 .profile_left .profile1 {
     position: absolute;
     top: calc(100vw * 40 / 1920);
-    left: calc(100vw * 100 / 1920);
+    left: calc(100vw * 80 / 1920);
     width: calc(100vw * 42 / 1920);
     z-index: 2;
 }
@@ -85,7 +88,7 @@
 .profile_left .profile2 {
     position: absolute;
     top: calc(100vw * 40 / 1920);
-    left: calc(100vw * 200 / 1920);
+    left: calc(100vw * 180 / 1920);
     width: calc(100vw * 41 / 1920);
     z-index: 2;
 }
@@ -97,7 +100,7 @@
 .profile_left .profile3 {
     position: absolute;
     top: calc(100vw * 125 / 1920);
-    left: calc(100vw * 140 / 1920);
+    left: calc(100vw * 130 / 1920);
     width: calc(100vw * 18 / 1920);
     z-index: 2;
 }
@@ -121,7 +124,7 @@
 .profile_left .profile5 {
     position: absolute;
     top: calc(100vw * 480 / 1920);
-    left: calc(100vw * 70 / 1920);
+    left: calc(100vw * -35 / 1920);
     width: calc(100vw * 220 / 1920);
     z-index: 2;
 }
@@ -190,8 +193,8 @@
 }
 .history h2 {
     font-weight: 700;
-    font-size: 32px;
-    line-height: 38px;
+    font-size: calc(100vw * 32 / 1920);
+    line-height: calc(100vw * 38 / 1920);
     color: #487AC0;
     margin-bottom: calc(100vw * 12 / 1920);
 }
@@ -246,6 +249,7 @@
     height: calc(100vw * 40 / 1920);
     color: #aaa;
     font-weight: 800;
+    font-size: calc(100vw * 17 / 1920);
     border-right: calc(100vw * 2 / 1920) solid #aaa;
     cursor: pointer;
 }
@@ -294,18 +298,25 @@
     font-size: calc(100vw * 24 / 1920);
     margin-bottom: calc(100vw * 10 / 1920);
 }
-
+.skill_con li div div {
+    font-size: calc(100vw * 18 / 1920);
+}
 
 
 #works {
     position: relative;
     height: calc(100vw * 4900 / 1920);
+    width: 100vw;
 }
 #works svg {
     position: absolute;
-    top: calc(100vw * 400 / 1920);
-    left: 0;
+    top: calc(100vw * 530 / 1920);
+    left: calc(100vw * 160 / 1920);
     z-index: -1;
+}
+.work_line {
+    width: calc(100vw * 1978 / 1920);
+    height: calc(100vw * 4560 / 1920);
 }
 .path2 {
     transition: all .4s ease-in-out;
