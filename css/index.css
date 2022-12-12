@@ -307,6 +307,7 @@
     position: relative;
     height: calc(100vw * 4900 / 1920);
     width: 100vw;
+    overflow: hidden;
 }
 #works svg {
     position: absolute;

@@ -94,9 +94,11 @@ nav {
     backdrop-filter: blur(2px);
     transform: translateX(calc(100vw * 160 / 1920));
     transition: .4s ease-in-out;
+    opacity: 0;
 }
 nav.open{
     transform: translateX(0);
+    opacity: 1;
 }
 nav li {
     list-style: none;
