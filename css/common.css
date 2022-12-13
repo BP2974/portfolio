@@ -115,7 +115,7 @@ footer {
     background: #4B7CC3;
     color: #fff;
     height: calc(100vw * 250 / 1920);
-    margin-top: calc(100vw * 80 / 1920);
+    margin-top: calc(100vw * 15 / 1920);
     text-align: center;
     padding: calc(100vw * 100 / 1920) calc(100vw * 200 / 1920);
     font-weight: 500;

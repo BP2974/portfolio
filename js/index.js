@@ -51,7 +51,6 @@ $(document).ready(function(){
         let win_scroll = $(window).scrollTop()*ratio1
         const footer_top = document.querySelector('footer').offsetTop;
         console.log(win_scroll)
-        console.log($(window).scrollTop())
         console.log(document.querySelector('footer').offsetTop)
 
         if(win_scroll >= 600 * ratio1)
@@ -66,12 +65,12 @@ $(document).ready(function(){
                 $('.profile_path'+i).css('stroke-dashoffset', '0')
             }
         }
-        if(win_scroll < 8900 * ratio1) {
+        if(win_scroll < 8491 * ratio1) {
             for(let i = 1; i < 11; i++){
                 $('.footer_text'+i).css('opacity', '0')
             }
         }
-        if(footer_top - win_scroll <= 519 * ratio1)
+        if(win_scroll >= 8491 * ratio1)
         {   
             for(let i = 1; i < 11; i++){
                 $('.footer_text'+i).delay(70*i).queue(function(){$(this).css({'opacity': '1', 'transition': 'opacity .2s'}); $(this).dequeue();});

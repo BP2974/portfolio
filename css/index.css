@@ -305,7 +305,7 @@
 
 #works {
     position: relative;
-    height: calc(100vw * 4900 / 1920);
+    height: calc(100vw * 4960 / 1920);
     width: 100vw;
     overflow: hidden;
 }
