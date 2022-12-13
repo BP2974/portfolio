@@ -292,6 +292,11 @@
 .skill_con li div img {
     margin-right: calc(100vw * 30 / 1920);
     width: calc(100vw * 100 / 1920);
+    transition: all 0.2s;
+    z-index: 3;
+}
+.skill_con li div img:hover {
+    transform: scale(1.1);
 }
 .skill_con li div {
     line-height: calc(100vw * 24 / 1920);
@@ -303,6 +308,7 @@
 .skill_con li div div {
     font-size: calc(100vw * 18 / 1920);
 }
+
 
 
 #works {
