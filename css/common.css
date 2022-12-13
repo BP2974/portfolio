@@ -34,6 +34,9 @@ h1 {
     line-height: calc(100vw * 60 / 1920);
     text-align: center;
 }
+h1 a:hover {
+    color: #000;
+}
 .hamburger_btn{
     position: fixed;
     width: calc(100vw * 25 / 1920);

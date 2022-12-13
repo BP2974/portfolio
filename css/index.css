@@ -368,28 +368,43 @@
     left: 0;
     width: 100vw;
     height: 100vh;
+    overflow-y: scroll;
     background: #fff;
     z-index: 2;
 }
 .work_info img {
-    position: absolute;
+    position: fixed;
     width: 50%;
+    top: 20%;
+    
 }
-.work_info h2 {
+.work_text {
     position: absolute;
+    top: 20%;
     left: 55%;
+    width: 50%;
+    padding-bottom: calc(100vw * 70 / 1920);
+}
+.work_text h2 {
     font-size: calc(100vw * 32 / 1920);
 }
-.work_info p {
-    position: absolute;
-    left: 55%;
-    top: 30%;
-    width: 34%;
+.work_text h3 {
+    font-size: calc(100vw * 24 / 1920);
+    margin-top: calc(100vw * 40 / 1920);
+}
+.work_text p {
+    width: 75%;
+    margin-top: calc(100vw * 20 / 1920);
     line-height: 1.5em;
     font-size: calc(100vw * 18 / 1920);
 }
-.back_btn {
+.work_text img {
     position: relative;
+    margin-top: calc(100vw * 20 / 1920);
+    width: 75%;
+}
+.back_btn {
+    position: fixed;
     width: calc(100vw * 25 / 1920);
     height: calc(100vw * 20 / 1920);
     margin: calc(100vw * 100 / 1920);
