@@ -50,8 +50,14 @@ $(document).ready(function(){
         const ratio1 = 1/1920 * window.innerWidth;
         let win_scroll = $(window).scrollTop()*ratio1
         const footer_top = document.querySelector('footer').offsetTop;
-        console.log(win_scroll)
-        console.log(document.querySelector('footer').offsetTop)
+        var scrollTop = $(this).scrollTop();
+        var innerHeight = $(this).innerHeight();
+        var scrollHeight = $('body').prop('scrollHeight');
+
+        /* console.log(win_scroll)  
+        console.log(document.querySelector('footer').offsetTop) */
+
+  if (scrollTop + innerHeight >= scrollHeight)
 
         if(win_scroll >= 600 * ratio1)
         {
@@ -70,7 +76,7 @@ $(document).ready(function(){
                 $('.footer_text'+i).css('opacity', '0')
             }
         }
-        if(win_scroll >= 8491 * ratio1)
+        if(scrollTop + innerHeight >= scrollHeight)
         {   
             for(let i = 1; i < 11; i++){
                 $('.footer_text'+i).delay(70*i).queue(function(){$(this).css({'opacity': '1', 'transition': 'opacity .2s'}); $(this).dequeue();});
