@@ -12,7 +12,7 @@
     margin-top: calc(100vw * 100 / 1920);
 }
 .name_line svg {
-    height: calc(100vw * 567 / 1920);
+    height: calc(100vw * 576 / 1920);
     width: calc(100vw * 764 / 1920);
 }
 .path0 {
@@ -47,6 +47,7 @@
     left: calc(100vw * 130 / 1920);
     width: calc(100vw * 1673 / 1920);
     height: calc(100vw * 1886 / 1920);
+    z-index: -2;
 }
 .path1 {
     transition: all .4s ease-in-out;
@@ -140,6 +141,7 @@
     line-height: calc(100vw * 29 / 1920);
     display: block;
     margin-top: calc(100vw * 10 / 1920);
+    z-index: 8;
 }
 .profile_right {
     right: 0;
