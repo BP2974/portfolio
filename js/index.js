@@ -94,11 +94,22 @@ $(document).ready(function(){
         $('.skill_con li').eq(index).addClass('active');
 
         for(let i = 1; i < 10; i++){
+            $(`.skill${i} div`).fadeOut(0);
             $('.skill'+i).css('opacity', '0');
             $('.skill'+i).delay(70*i).queue(function(){$(this).css({'opacity': '1', 'transition': 'opacity .3s'}); $(this).dequeue();})
             $('.skill'+i).css('transition', 'none');
         }
     });
+
+    for(let i = 1; i < 10; i++){
+            $(`.skill${i} div`).fadeOut('fast');
+            $(`.skill${i} img`).mouseover(function(){
+            $(`.skill${i} div`).fadeIn('fast');
+        })
+        $(`.skill${i} img`).mouseleave(function(){
+            /* $(`.skill${i} div`).fadeOut('fast'); */
+        })
+    }
 
     for(let i = 0; i < 4; i++){
         $('.work_img').eq(i).mouseover(function(){
@@ -110,10 +121,10 @@ $(document).ready(function(){
             $('.work_simple').eq(i).css('display', 'none')
         })
         $('.work_img').eq(i).click(function(){
-            $('.work_info').eq(i).show('fast');
+            $('.work_info').eq(i).show(0);
         })
         $('.back_btn').eq(i).click(function(){
-            $('.work_info').eq(i).hide('fast');
+            $('.work_info').eq(i).hide(0);
         })
     }
 
