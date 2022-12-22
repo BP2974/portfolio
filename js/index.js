@@ -22,7 +22,7 @@ $(document).ready(function(){
 
     btn_down.mouseover(function(){
         $(this).css({'border': 'none', 'background': '#4B7CC3', 'color': '#fff'})
-        $(this).text('Open Resume')
+        $(this).text('Download Resume')
     })
     btn_down.mouseleave(function(){
         $(this).css({'border': '#000 solid calc(100vw * 1 / 1920)', 'background': '#fff', 'color': '#000'})
