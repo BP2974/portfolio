@@ -18,6 +18,21 @@ $(document).ready(function(){
     })
 
 
+    const btn_down = $('aside button');
+
+    btn_down.mouseover(function(){
+        $(this).css({'border': 'none', 'background': '#4B7CC3', 'color': '#fff'})
+        $(this).text('Open Resume')
+    })
+    btn_down.mouseleave(function(){
+        $(this).css({'border': '#000 solid calc(100vw * 1 / 1920)', 'background': '#fff', 'color': '#000'})
+        $(this).text('Read Me!')
+    })
+    btn_down.click(function(){
+        window.open('../백민경 이력서.pdf')
+    })
+
+
     const content1 = document.querySelector('.content1')
     const content3 = document.querySelector('.content3')
     const path1 = document.querySelector('.path1')
@@ -57,22 +72,22 @@ $(document).ready(function(){
         /* console.log(win_scroll)  
         console.log(document.querySelector('footer').offsetTop) */
 
-  if (scrollTop + innerHeight >= scrollHeight)
 
-        if(win_scroll >= 600 * ratio1)
+        if(win_scroll >= 500 * ratio1)
         {
-            for(let i = 1; i < 4; i++){
+            console.log('dfd')
+            for(let i = 1; i <= 3; i++){
                 $('.profile_path'+i).css('stroke-dashoffset', '0')
             }
         }
         if(win_scroll >= 700 * ratio1)
         {
-            for(let i = 4; i < 6; i++){
+            for(let i = 4; i <= 5; i++){
                 $('.profile_path'+i).css('stroke-dashoffset', '0')
             }
         }
         if(win_scroll < 8491 * ratio1) {
-            for(let i = 1; i < 11; i++){
+            for(let i = 1; i <= 10; i++){
                 $('.footer_text'+i).css('opacity', '0')
             }
         }
@@ -127,6 +142,7 @@ $(document).ready(function(){
             $('.work_info').eq(i).hide(0);
         })
     }
+
 
 })
     
