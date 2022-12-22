@@ -28,9 +28,6 @@ $(document).ready(function(){
         $(this).css({'border': '#000 solid calc(100vw * 1 / 1920)', 'background': '#fff', 'color': '#000'})
         $(this).text('Read Me!')
     })
-    btn_down.click(function(){
-        window.open('../Resume.pdf')
-    })
 
 
     const content1 = document.querySelector('.content1')
