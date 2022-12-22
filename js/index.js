@@ -29,7 +29,7 @@ $(document).ready(function(){
         $(this).text('Read Me!')
     })
     btn_down.click(function(){
-        window.open('../백민경 이력서.pdf')
+        window.open('../Resume.pdf')
     })
 
 
