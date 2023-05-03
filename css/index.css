@@ -147,7 +147,6 @@
     right: 0;
     width: 50%;
     height: 100%;
-    text-align: left;
     padding: calc(100vw * 100 / 1920) calc(100vw * 230 / 1920) 0 calc(100vw * 135 / 1920);
 }
 .profile_right span {
@@ -168,6 +167,11 @@
     line-height: calc(100vw * 50 / 1920);
     color: #487AC0;
 }
+.profile_right .flex{
+    display: flex;
+    flex-direction: column;
+    gap: calc(100vw * 380 / 1920);
+}
 .profile_right p {
     width: calc(100vw * 525 / 1920);
     font-weight: 400;
@@ -175,7 +179,6 @@
     line-height: calc(100vw * 34 / 1920);
 }
 .profile_right p:last-of-type {
-    margin-top: calc(100vw * 380 / 1920);
     width: calc(100vw * 550 / 1920);
 }
 .profile_right p span {
