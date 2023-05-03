@@ -72,7 +72,6 @@ $(document).ready(function(){
 
         if(win_scroll >= 500 * ratio1)
         {
-            console.log('dfd')
             for(let i = 1; i <= 3; i++){
                 $('.profile_path'+i).css('stroke-dashoffset', '0')
             }
@@ -88,11 +87,13 @@ $(document).ready(function(){
                 $('.footer_text'+i).css('opacity', '0')
             }
         }
-        if(scrollTop + innerHeight >= scrollHeight)
+        if(scrollTop + innerHeight >= scrollHeight - 1)
         {   
             for(let i = 1; i < 11; i++){
                 $('.footer_text'+i).delay(70*i).queue(function(){$(this).css({'opacity': '1', 'transition': 'opacity .2s'}); $(this).dequeue();});
             }
+            $(path2).css("strokeDashoffset", 0);
+            console.log("bottom")
         }
     })
 
